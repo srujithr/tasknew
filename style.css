@@ -1,0 +1,608 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* PAGE */
+body{
+    background:#000;
+    display:flex;
+    justify-content:center;
+    padding:40px 0;
+}
+
+/* MOBILE CONTAINER */
+.mobile{
+    width:375px;
+    background:linear-gradient(180deg,#1b3b2a,#4f755b);
+    border-radius:30px;
+    overflow:hidden;
+    color:#fff;
+}
+
+/* HEADER */
+.header{
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.back{
+    width:36px;
+    height:36px;
+    background:#fff;
+    color:#1b3b2a;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:18px;
+}
+.logo{
+    font-weight:600;
+}
+
+/* HERO CONTENT */
+.hero-content{
+    padding:20px;
+}
+
+.tag{
+    font-size:12px;
+    color:#e6c27a;
+    letter-spacing:1px;
+}
+h1{
+    margin-top:10px;
+    font-size:26px;
+    line-height:1.3;
+}
+h1 span{ color:#e6c27a; }
+
+.desc{
+    margin-top:15px;
+    font-size:14px;
+    opacity:.9;
+}
+
+.rating{
+    margin-top:15px;
+    display:flex;
+    gap:8px;
+    font-size:14px;
+}
+.stars{ color:#e6c27a; }
+
+.section{
+    margin-top:30px;
+    font-size:13px;
+    letter-spacing:1px;
+    opacity:.9;
+}
+
+/* SERVICE CARDS */
+.cards{
+    margin-top:15px;
+    display:flex;
+    gap:12px;
+}
+.card{
+    width:110px;
+    background:rgba(255,255,255,.12);
+    border-radius:16px;
+    overflow:hidden;
+    text-align:center;
+}
+.card img{
+    width:100%;
+    height:110px;
+    object-fit:cover;
+}
+.card p{
+    padding:10px;
+    font-size:14px;
+}
+
+/* BUTTON */
+.btn{
+    margin:25px 20px;
+    background:#e6c27a;
+    color:#1b3b2a;
+    border:none;
+    border-radius:30px;
+    padding:15px;
+    font-size:16px;
+    font-weight:600;
+    width:calc(100% - 40px);
+}
+
+/* ================= DISCOVER MORE ================= */
+
+.discover-section{
+    padding: 5px 20px ;
+    text-align:center;
+}
+
+.discover-section p{
+    font-size:13px;
+    letter-spacing:2px;
+    color:#ffffff;
+    margin-bottom:14px;
+}
+
+.discover-line{
+    display:block;
+    width:1px;
+    height:20px;
+    background:rgba(255,255,255,.6);
+    margin:0 auto;
+}
+
+/* ================= ABOUT SECTION ================= */
+
+.about-top{
+    background:#f4efe6;
+    padding:60px 20px 50px;
+    text-align:center;
+    color:#4f755b;
+}
+
+.about-title{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:14px;
+    margin-bottom:18px;
+}
+.about-title span{
+    width:50px;
+    height:1px;
+    background:#7aa18d;
+}
+.about-title p{
+    font-size:13px;
+    letter-spacing:2px;
+}
+
+.about-top h2{
+    font-size:24px;
+    margin-bottom:12px;
+}
+
+.about-subtitle{
+    font-size:14px;
+    color:#7a847c;
+    line-height:1.6;
+}
+
+/* ABOUT BOTTOM */
+.about-bottom{
+    background:#5b846e;
+    padding:50px 20px 60px;
+    text-align:center;
+}
+
+.about-text{
+    font-size:15px;
+    line-height:1.7;
+    margin-bottom:40px;
+    opacity:.95;
+}
+
+/* STATS */
+.about-cards{
+    display:flex;
+    gap:16px;
+    justify-content:center;
+}
+.about-card{
+    width:100px;
+    height:100px;
+    background:rgba(255,255,255,.12);
+    border-radius:18px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.about-card h3{
+    font-size:20px;
+    margin-bottom:6px;
+}
+.about-card p{
+    font-size:11px;
+    letter-spacing:1px;
+}
+.about-card.highlight h3{
+    color:#f4c46d;
+}
+/* ================= WHAT WE OFFER ================= */
+
+.offer-section{
+    background:#f4efe6;
+    padding: 40px 16px 70px;
+    text-align:center;
+}
+
+.offer-title{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:14px;
+    margin-bottom:18px;
+}
+
+.offer-title span{
+    width:50px;
+    height:1px;
+    background:#7aa18d;
+}
+
+.offer-title p{
+    font-size:13px;
+    letter-spacing:2px;
+    color:#4f755b;
+}
+
+.offer-top h2{
+    font-size:24px;
+    color:#4f755b;
+    margin-bottom:12px;
+}
+
+.offer-top h2 span{
+    color:#e6c27a;
+}
+
+.offer-subtitle{
+    font-size:14px;
+    color:#7a847c;
+    line-height:1.6;
+    margin-bottom:35px;
+}
+
+/* GRID */
+.offer-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+}
+
+.offer-card{
+    background:#fff;
+    border-radius:16px;
+    overflow:hidden;
+}
+
+.offer-card img{
+    width:100%;
+    height:130px;
+    object-fit:cover;
+}
+
+.offer-card p{
+    background:rgba(0,0,0,.55);
+    color:#fff;
+    font-size:13px;
+    padding:8px;
+    margin-top:-36px;
+}
+
+/* ================= GALLERY SECTION ================= */
+
+.gallery-section{
+    background:#f4efe6;
+    padding: 40px 16px 70px;
+    text-align:center;
+}
+
+
+.gallery-title{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:14px;
+    margin-bottom:18px;
+}
+
+.gallery-title span{
+    width:50px;
+    height:1px;
+    background:#7aa18d;
+}
+
+.gallery-title p{
+    font-size:13px;
+    letter-spacing:2px;
+    color:#4f755b;
+}
+
+.gallery-top h2{
+    font-size:24px;
+    color:#4f755b;
+    margin-bottom:12px;
+}
+
+.gallery-subtitle{
+    font-size:14px;
+    color:#7a847c;
+    line-height:1.6;
+    margin-bottom:30px;
+}
+
+/* MAIN IMAGE */
+.gallery-main{
+    position:relative;
+    border-radius:20px;
+    overflow:hidden;
+    margin-bottom:18px;
+}
+
+.gallery-main img{
+    width:100%;
+    height:190px;
+    object-fit:cover;
+}
+
+.play-btn{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:56px;
+    height:56px;
+    background:rgba(255,255,255,.85);
+    color:#4f755b;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+}
+
+/* GRID */
+.gallery-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+}
+
+.gallery-card{
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.gallery-card img{
+    width:100%;
+    height:140px;
+    object-fit:cover;
+}
+/* ================= PREMIUM FACILITIES ================= */
+
+.facility-section{
+    background:#f4efe6;
+    padding: 40px 16px 70px;
+}
+
+.facility-heading{
+    font-size:14px;
+    letter-spacing:1px;
+    color:#000;
+    margin-bottom:20px;
+}
+
+/* Cards Container */
+.facility-cards{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+}
+
+/* Card */
+.facility-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+/* Image */
+.facility-image{
+    position:relative;
+}
+
+.facility-image img{
+    width:100%;
+    height:120px;
+    object-fit:cover;
+}
+
+/* Premium Badge */
+.badge-premium{
+    position:absolute;
+    top:10px;
+    left:10px;
+    background:#f4c46d;
+    color:#fff;
+    font-size:12px;
+    padding:6px 14px;
+    border-radius:20px;
+    font-weight:500;
+}
+
+/* Content */
+.facility-content{
+    padding:14px;
+}
+
+.facility-content h4{
+    font-size:16px;
+    color:#4f755b;
+    margin-bottom:8px;
+}
+
+.facility-content p{
+    font-size:13px;
+    color:#6f7f75;
+    line-height:1.5;
+}
+
+/* ================= TESTIMONIALS ================= */
+
+.testimonial-section{
+    background:#f4efe6;
+    padding:60px 16px 70px;
+}
+
+.testimonial-heading{
+    font-size:14px;
+    letter-spacing:1px;
+    color:#000;
+    margin-bottom:20px;
+}
+
+/* Cards wrapper (horizontal scroll like Figma) */
+.testimonial-cards{
+    display:flex;
+    gap:16px;
+    overflow-x:auto;
+    padding-bottom:10px;
+}
+
+.testimonial-cards::-webkit-scrollbar{
+    display:none;
+}
+
+/* Card */
+.testimonial-card{
+    min-width:290px;
+    background:#fff;
+    border-radius:22px;
+    padding:22px 18px;
+}
+
+/* Quote icon */
+.quote-icon{
+    width:44px;
+    height:44px;
+    background:#bfe8d3;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:26px;
+    margin-bottom:12px;
+}
+
+/* Stars */
+.testimonial-card .stars{
+    color:#f4c46d;
+    font-size:16px;
+    margin-bottom:10px;
+}
+
+/* Text */
+.testimonial-text{
+    font-size:14px;
+    color:#6f7f75;
+    line-height:1.6;
+}
+/* ================= CONTACT SECTION ================= */
+
+.contact-section{
+    background:#f4efe6;
+}
+
+/* TOP */
+.contact-top{
+    background:linear-gradient(180deg,#0f2d1f,#274c3a);
+    padding:60px 16px 50px;
+    text-align:center;
+    color:#fff;
+}
+
+.contact-label{
+    font-size:13px;
+    letter-spacing:2px;
+    color:#f4c46d;
+    margin-bottom:10px;
+}
+
+.contact-top h2{
+    font-size:24px;
+    margin-bottom:8px;
+}
+
+.contact-subtitle{
+    font-size:14px;
+    color:rgba(255,255,255,.75);
+    margin-bottom:30px;
+}
+
+/* ICON CARDS */
+.contact-cards{
+    display:flex;
+    gap:14px;
+    justify-content:center;
+}
+
+.contact-card{
+    width:100px;
+    height:100px;
+    background:rgba(255,255,255,.08);
+    border-radius:18px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.contact-icon{
+    font-size:26px;
+    margin-bottom:10px;
+}
+
+.contact-icon.call{
+    color:#f4c46d;
+}
+
+.contact-icon.whatsapp{
+    color:#3edc81;
+}
+
+.contact-icon.location{
+    color:#f4c46d;
+}
+
+.contact-card p{
+    font-size:13px;
+    opacity:.9;
+}
+
+/* BOTTOM */
+.contact-bottom{
+    background:#fff;
+    padding:40px 16px 50px;
+    text-align:center;
+}
+
+.contact-note{
+    font-size:13px;
+    color:#7a847c;
+    margin-bottom:18px;
+}
+
+.contact-btn{
+    width:100%;
+    background:#f0d9a3;
+    color:#000;
+    border:none;
+    border-radius:20px;
+    padding:16px;
+    font-size:16px;
+    font-weight:600;
+}
+
